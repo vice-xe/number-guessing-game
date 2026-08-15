@@ -6,7 +6,7 @@ import random
 
 while True:
    
-   difficulty = input("Choose Difficulty(easy,medimum,hard)").lower()
+   difficulty = input("Choose Difficulty(easy,medimum,hard)").strip().lower()
 
    if difficulty == "easy":
       maximum = 50
@@ -69,4 +69,4 @@ while play_again == "yes":
 
     # Ask the User if they want to Play Again
     
-    play_again = input("Do you want to play again? (yes/no):")
+    play_again = input("Do you want to play again? (yes/no):").strip().lower()
